@@ -1,6 +1,7 @@
-body{
-font-family: "Comfortaa", sans-serif;
+body {
+    font-family: "Comfortaa", sans-serif;
 }
+
 .parent {
     position: relative;
     border: 1px solid black;
@@ -11,13 +12,13 @@ font-family: "Comfortaa", sans-serif;
 }
 
 .solid-circle {
-    height: 850px;
+    height: 1000px;
     width: 850px;
     background-color: #476EF7;
     border-radius: 50%;
     position: absolute;
     right: -425px;
-    top: -60px;
+    top: -45px;
     z-index: 1;
 }
 
@@ -43,16 +44,30 @@ font-family: "Comfortaa", sans-serif;
     color: #476EF7;
     font-size: 100px;
 }
-.form-floating{
-    box-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
+
+.form-floating {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
 }
-.login{
+
+.login {
     background-color: #476EF7;
     color: white;
-    padding:10px 25px
-
+    padding: 10px 25px
 }
-.main-content{
-    margin-left:50px
+
+.main-content {
+    margin-left: 50px
+}
+
+@media only screen and (max-width: 768px) {
+    .solid-circle {
+        height: 300px;
+        width: 300px;
+        right: -140px;
+        top: -130px;
+    }
+    .header-home{
+        padding: 20px 20px;
+    }
 }

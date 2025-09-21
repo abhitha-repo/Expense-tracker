@@ -18,26 +18,25 @@
 <body>
     <div class="header">
         <p class="m-0">Expense<br>Tracker
-            <img src="./expense.png" alt="" width="50px" height="50px">
-        </p>
+            <img src="./img/expense.png" alt="" width="50px" height="50px">
+        </p> 
 
     </div>
     <div class="form">
         <div class="form-floating inputs">
-            <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="date" class="form-control dateInput" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Date</label>
         </div>
         <div class="form-floating inputs">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="email" class="form-control amountInput" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Amount</label>
         </div>
-        <select class="form-select inputs" aria-label="Default select example">
-            <option selected>Transaction Type</option>
+        <select class="form-select inputs transactionType" aria-label="Default select example" placeholder="Transaction Type">
             <option value="income">Income</option>
             <option value="expense">Expense</option>
         </select>
 
-        <button class="btn" id="add-button">+</button>
+        <button class="btn" id="add-button" onclick="addValues()">+</button>
     </div>
 
     <div class="cards mt-4">
@@ -45,13 +44,13 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title m-0">Total Income
-                    <img src="./wallet-filled-money-tool.png" alt="" width="35px" height="35px">
+                    <img src="./img/wallet-filled-money-tool.png" alt="" width="30px" height="30px">
                 </h5>
             </div>
 
-            <h1 class="m-0">
-                <img src="./currency.png" alt="" width="35px" height="35px">
-                <span id="totalIncome m-0">10,499</span>
+            <h1 class="m-0 amount">
+                <img src="./img/currency.png" alt="" width="30px" height="30px">
+                <span id="totalIncome" class="m-0">0</span>
             </h1>
         </div>
 
@@ -59,13 +58,13 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title m-0">Total Expense
-                    <img src="./expenses.png" alt="" width="35px" height="35px">
+                    <img src="./img/expenses.png" alt="" width="30px" height="30px">
                 </h5>
             </div>
 
-            <h1 class="m-0">
-                <img src="./currency.png" alt="" width="35px" height="35px">
-                <span id="totalExpense m-0">5000</span>
+            <h1 class="m-0 amount">
+                <img src="./img/currency.png" alt="" width="30px" height="30px">
+                <span id="totalExpense" class="m-0">0</span>
             </h1>
         </div>
 
@@ -73,39 +72,39 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title m-0">Balance
-                    <img src="./rupee.png" alt="" width="35px" height="35px">
+                    <img src="./img/rupee.png" alt="" width="30px" height="30px">
                 </h5>
             </div>
 
-            <h1 class="m-0">
-                <img src="./currency.png" alt="" width="35px" height="35px">
-                <span id="totalBalance m-0">5000</span>
+            <h1 class="m-0 amount">
+                <img src="./img/currency.png" alt="" width="30px" height="30px">
+                <span id="totalBalance" class="m-0">0</span>
             </h1>
         </div>
         
     </div>
 
-    <table class="transaction-table">
+    <table class="transaction-table" id="transaction-table">
         <tr id="table-header">
             <th>Amount</th>
             <th>Transaction Type</th>
             <th>Transaction Date</th>
             <th>Action</th>
         </tr>
-        <tr>
+        <!-- <tr>
             <td>10,000</td>
             <td>Income</td>
             <td>2023-08-01</td>
             <td>
                 <button class="btn btn-md delete-button">
-                    <img src="./recycle-bin.png" alt="" width="25px" height="25px">
+                    <img src="./img/recycle-bin.png" alt="" width="25px" height="25px">
                 </button>
             </td>
-        </tr>
+        </tr> -->
     </table>
 
 
-
+<script src="./tracker.js"></script>
 
 
 
