@@ -21,7 +21,15 @@ body {
     top: -45px;
     z-index: 1;
 }
-
+.heading img {
+    margin-left: 10px;
+    margin-top: -13px;
+}
+.heading{
+    color:#476EF7;
+    font-size: 50px;
+    font-weight: 700;
+}
 .header-home {
     display: flex;
     justify-content: space-between;
@@ -71,3 +79,4 @@ body {
         padding: 20px 20px;
     }
 }
+
